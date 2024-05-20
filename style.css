@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back-color {
+    background-color: white;
+    height: 350px;
+    width: 40%;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 3px 3px 12px hsl(252, 100%, 67%);
+    margin-top: 90px;
+    display: flex;
+}
+
+.front-color {
+    background-image: linear-gradient(to top, #2e2be9, #7857ff);
+    height: 350px;
+    width: 51%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(Fonts/HankenGrotesk-Medium.ttf);
+}
+
+.remark-paragraph {
+    font-family: "HankenGrotesk";
+    color: hsl(223, 37%, 93%);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    border-radius: 90px;
+    margin-top: 30px;
+}
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(Fonts/HankenGrotesk-ExtraBold.ttf) !important;
+}
+
+.circle h1 {
+    font-size: 49px;
+    font-family: "HankenGrotesk" !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.circle>p {
+    font-family: "HankenGrotesk" !important;
+    color: hsl(222, 27%, 62%);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(Fonts/HankenGrotesk-Medium.ttf);
+}
+
+h2 {
+    color: hsl(223, 37%, 93%);
+    font-family: "HankenGrotesk";
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(Fonts/HankenGrotesk-Medium.ttf);
+}
+
+.remark {
+    color: hsl(223, 37%, 93%);
+    font-family: "HankenGrotesk";
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 1px;
+    width: 169px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(Fonts/HankenGrotesk-Medium.ttf);
+}
+
+.summary {
+    font-family: "HankenGrotesk";
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.button-group {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-20px);
+    gap: 13px;
+}
+
+.button-group button:nth-child(1) {
+    background-color: hsl(0, 100%, 89%);
+    border-radius: 5px;
+    border: none;
+    width: 170%;
+    height: 39px;
+    color: hsl(0, 100%, 67%);
+    font-family: "HankenGrotesk";
+}
+
+.button-group button:nth-child(1)>p,
+.button-group button:nth-child(2)>p,
+.button-group button:nth-child(3)>p,
+.button-group button:nth-child(4)>p {
+    display: flex;
+    transform: translate(39px, 1px);
+}
+
+.button-group button:nth-child(1)>p>img,
+.button-group button:nth-child(2)>p>img,
+.button-group button:nth-child(3)>p>img,
+.button-group button:nth-child(4)>p>img {
+    transform: translate(-20px, 0px);
+}
+
+.button-group button:nth-child(1)>p span,
+.button-group button:nth-child(2)>p span,
+.button-group button:nth-child(3)>p span,
+.button-group button:nth-child(4)>p span {
+    transform: translateX(55px);
+    font-weight: 1000;
+    display: inline-flex;
+    color: hsl(221, 70%, 18%);
+    padding-right: 10px;
+}
+
+.rating {
+    color: hwb(222 68% 0%) !important;
+}
+
+.button-group button:nth-child(2) {
+    background-color: hsl(39, 100%, 80%);
+    border-radius: 5px;
+    border: none;
+    width: 170%;
+    height: 39px;
+    color: hsl(39, 100%, 56%);
+    font-family: "HankenGrotesk";
+}
+
+.button-group button:nth-child(3) {
+    background-color: hsl(166, 96%, 82%);
+    border-radius: 5px;
+    border: none;
+    width: 170%;
+    height: 39px;
+    color: hsl(166, 100%, 37%);
+    font-family: "HankenGrotesk";
+}
+
+.button-group button:nth-child(4) {
+    background-color: hsl(234, 100%, 92%);
+    border-radius: 5px;
+    border: none;
+    width: 170%;
+    height: 39px;
+    color: hsl(234, 85%, 45%);
+    font-family: "HankenGrotesk";
+}
+
+.continue {
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    border: none;
+    width: 170%;
+    height: 39px;
+    color: white;
+    font-family: "HankenGrotesk";
+    margin-top: 10px;
+}
+
+.continue:hover {
+    cursor: pointer;
+    background-color: hsla(256, 72%, 46%, 1);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:378px) {
+    body {
+        background-color: white;
+    }
+
+    .back-color {
+        height: 651px;
+        width: 369px;
+        margin: auto;
+        background-color: white;
+        margin-right: 10px;
+        border-radius: 0;
+        box-shadow: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+    }
+
+    .front-color {
+        height: 290px;
+        width: 369px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .front-color>p {
+        font-size: 14px;
+    }
+
+    .circle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .circle>h1 {
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        transform: translateY(-10px);
+    }
+
+    .circle>p {
+        display: flex;
+        justify-content: center;
+        transform: translateY(-10px);
+    }
+
+    .remark {
+        font-size: 14px;
+        width: 250px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .button-group button:nth-child(1),
+    .button-group button:nth-child(2),
+    .button-group button:nth-child(3),
+    .button-group button:nth-child(4),
+    .continue {
+        width: 320px;
+    }
+
+    .button-group button:nth-child(1)>p span,
+    .button-group button:nth-child(2)>p span,
+    .button-group button:nth-child(3)>p span,
+    .button-group button:nth-child(4)>p span {
+        transform: translateX(120px);
+    }
+
+    .continue:hover {
+        cursor: pointer;
+        background-color: hsla(256, 72%, 46%, 1);
+    }
+
+}
